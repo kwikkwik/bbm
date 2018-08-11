@@ -23,7 +23,7 @@ bot.on('message', async msg => { // eslint-disable-line
     if (message.author.bot) return;
     if (message.channel.type === 'dm') return;
  
-    var DEFAULTPREFIX = '^'
+    var DEFAULTPREFIX = 'b!'
  
     var {body} = await superagent
         .get("https://glitch.com/edit/#!/wkwkland-misayu?path=prefixes.json")
