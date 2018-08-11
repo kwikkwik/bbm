@@ -26,7 +26,7 @@ bot.on('message', async msg => { // eslint-disable-line
     var DEFAULTPREFIX = 'b!'
  
     var {body} = await superagent
-        .get("https://glitch.com/edit/#!/wkwkland-misayu?path=prefixes.json")
+        .get("https://github.com/KidsTrap/Bb/blob/master/prefixes.json")
     
     if (!body[message.guild.id]) {
         body[message.guild.id] = {
